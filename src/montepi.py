@@ -27,7 +27,7 @@ def monte_pi(points: int) -> float:
     for _ in range(points):
         # Randomly sample a point within the square
         point_x, point_y = random.uniform(-1, 1), random.uniform(-1, 1)
-        # get the distance from the point to the origin
+        # get the distance from the point to the origin (no need to square root but it more explicitly resembles the euclidian distance formula this way)
         dist = math.sqrt((point_x * point_x) + (point_y * point_y))
         # check if the point lies within the unit circle (radius of 1)
         in_circle += (dist < 1)
