@@ -11,7 +11,8 @@ $$\pi \approx 4*\frac{Points \ inside \ Circle}{Points \ inside \ Square}$$
 
 ## MontePi.py
 ```console
->python montepi.py
->>> Enter the number of points to use for the approximation: 10000
->>> 𝝅 ≈  3.1264
+>python src/main.py
+
+Enter the number of points to use for the approximation: 100000
+𝝅 ≈  3.14108
 ```
