@@ -1,7 +1,7 @@
 # MontePi
 Monte Carlo approximation of pi for pi day! 
 
-There is a Python version, as well as a faster C version.
+There is a Python version, an accelerated Numpy version (significantly faster), as well as an even faster C version.
 
 The approximation works by randomly placing points in a square of side length 2 with an inscribed circle of radius 1.
 

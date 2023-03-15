@@ -17,7 +17,9 @@ uint32_t shiftxor32(struct xor32* __restrict gen) {
     x ^= x >> 17;
     x ^= x << 5;
 
-    return gen->state = x;
+    gen->state = x;
+
+    return x;
 }
 
 float montepi(struct xor32* __restrict gen, int N) {
