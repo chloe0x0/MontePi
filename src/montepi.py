@@ -1,5 +1,6 @@
 import random
 import math
+import numpy as np
 
 '''
 
@@ -37,3 +38,11 @@ def monte_pi(points: int) -> float:
 
     return pi
 
+def monte_pi_np(N: int) -> float:
+    # get N points and store in a Numpy Array
+    points = np.random.uniform(-1, 1, size = (N, 2))
+    # get distances from origin
+    points = np.sum(points**2, axis=1)
+    in_circle = np.sum(points < 1)
+    
+    return 4*(in_circle/N)
