@@ -8,7 +8,7 @@ import numpy as np
         Points are randomly placed within the square
         pi is approximately equal to 4 times the ratio of points in the circle and points outside the circle
 
-       1 
+    (-1, 1)            (1, 1)
         +---------------+
         |   _________   |
         |  /      1  \  |
@@ -16,7 +16,7 @@ import numpy as np
         |  |         |  |
         |  \_________/  |
         +---------------+
-       -1                1
+    (-1, -1)           (1, -1)
 '''
 
 def monte_pi(points: int) -> float:
